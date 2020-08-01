@@ -37,8 +37,3 @@ class MachineInfo(object):
         print("\nMAC: {}".format(self.info['mac-address']))
         print("\nProcesador: {}".format(self.info['processor']))
         print("\nMemoria RAM: {}".format(self.info['ram']))
-
-
-if __name__ == "__main__":
-    m = MachineInfo()
-    m.showMachineInfo()
