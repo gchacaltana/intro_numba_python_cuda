@@ -18,6 +18,13 @@ numba: 0.48.0
 """
 # from MachineInfo import MachineInfo
 import numpy as np
+from numba import vectorize
+
+
+@vectorize(['float32(float32, float32)'], target='cuda')
+def Add(a, b):
+    return a + b
+
 
 if __name__ == "__main__":
     # Inicializando Arrays
