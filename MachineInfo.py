@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
+# Gonzalo Chacaltana Buleje
 import platform
+import socket
 import socket
 import re
 import uuid
@@ -26,7 +28,7 @@ class MachineInfo(object):
             round(psutil.virtual_memory().total / (1024.0 ** 3)))+" GB"
 
     def showMachineInfo(self):
-        print("\nInformacion de computador")
+        print("\nServer Information")
         print("---------------------------------")
         print("\nPlataforma: {}".format(self.info['platform']))
         print("\nPlataforma Release: {}".format(self.info['platform-release']))
