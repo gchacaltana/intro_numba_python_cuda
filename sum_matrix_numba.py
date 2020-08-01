@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Decorador @vectorize para generar una versión compilada y vectorizada de la función escalar “Add” en tiempo de ejecución,
+Decorador @vectorize para generar una versión compilada de la función “Add” en tiempo de ejecución,
 a fin de que pueda usarse para procesar matrices de datos en paralelo en la GPU.
 
 Requisitos:
@@ -39,4 +39,6 @@ if __name__ == "__main__":
     print("C")
     print(C)
     print(np.sum(C))
-    
+    # Add arrays on GPU
+    D = Add(A, B)
+    print(D)
